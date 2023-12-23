@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { api } from "../../api/api";
 import { useAppDispatch } from "../../store";
 import { validatePhone } from "./phoneUtils";
-import { savePhone } from "../authSlice";
+import { savePhone } from "../../redux/authSlice";
 
 export const usePhone = () => {
   const [phone, setPhone] = useState("");
