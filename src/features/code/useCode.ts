@@ -17,7 +17,7 @@ export const useCode = () => {
   }, [phone]);
   useEffect(() => {
     if (error) {
-      if ("code" in error && error.code === "401") {
+      if ("status" in error && error.status === 401) {
         setErrorText("Неверный код");
       } else {
         setErrorText("Ошибка сервера");
