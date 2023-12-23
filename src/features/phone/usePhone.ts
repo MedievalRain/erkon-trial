@@ -1,7 +1,7 @@
 import { useState, FormEvent, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../api/api";
-import { useAppDispatch } from "../../store";
+import { useAppDispatch } from "../../redux/store";
 import { validatePhone } from "./phoneUtils";
 import { savePhone } from "../../redux/authSlice";
 

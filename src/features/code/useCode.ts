@@ -1,7 +1,7 @@
 import { useState, useEffect, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../api/api";
-import { useAppSelector, useAppDispatch } from "../../store";
+import { useAppSelector, useAppDispatch } from "../../redux/store";
 import { login } from "../../redux/authSlice";
 
 export const useCode = () => {

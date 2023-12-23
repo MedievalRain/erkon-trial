@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { useAppSelector } from "../store";
+import { useAppSelector } from "../redux/store";
 
 const Wrapper = styled.div`
   display: flex;
