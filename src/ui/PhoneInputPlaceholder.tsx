@@ -11,7 +11,7 @@ const StyledPhoneInputPlaceholder = styled.div`
   font-weight: 400;
   line-height: 24px; /* 150% */
   white-space: pre;
-  color: #5b5b5b;
+  color: ${(props) => props.theme.textSecondary};
   z-index: 1;
   width: 100%;
   text-indent: 12px;

@@ -29,8 +29,8 @@ const CodeBox = styled.div`
   align-items: center;
   align-self: stretch;
   border-radius: 8px;
-  background: #ebeef2;
-  color: #252627;
+  background: ${(props) => props.theme.auxiliaryElements};
+  color: ${(props) => props.theme.textBase};
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

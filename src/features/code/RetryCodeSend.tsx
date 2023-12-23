@@ -9,7 +9,7 @@ const StyledRetryCodeSend = styled.div`
 `;
 
 const RetryButton = styled.button`
-  color: #ff3d3d;
+  color: ${(props) => props.theme.redAccent};
   font-size: 14px;
   font-weight: 400;
   line-height: 16px; /* 114.286% */
@@ -36,7 +36,7 @@ function RetryCodeSend({ code }: RetryCodeSendProps) {
   return (
     <StyledRetryCodeSend>
       {isLoading ? (
-        <Loader color="#252627" />
+        <Loader />
       ) : seconds > 0 ? (
         <p>Отправить еще раз через: {formattedTime}</p>
       ) : (

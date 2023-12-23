@@ -21,7 +21,7 @@ const Placeholder = styled.div`
   height: 32px;
 `;
 const HeaderText = styled.h1`
-  color: #252627;
+  color: ${(props) => props.theme.textBase};
   text-align: center;
   font-size: 24px;
   font-style: normal;

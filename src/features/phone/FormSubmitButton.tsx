@@ -4,7 +4,7 @@ import { Loader } from "../../ui/Loader";
 const StyledFormSubmitButton = styled.button`
   max-width: 330px;
   width: 100%;
-  background: #1e1e1e;
+  background: ${(props) => props.theme.primaryNormal};
   color: #ffffff;
   height: 49.152px;
   font-size: 18.864px;

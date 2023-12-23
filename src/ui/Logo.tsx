@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledLogo = styled.h1`
   text-transform: uppercase;
-  color: #252627;
+  color: ${(props) => props.theme.textBase};
   font-family: Inter;
   font-size: 26px;
   font-weight: 500;

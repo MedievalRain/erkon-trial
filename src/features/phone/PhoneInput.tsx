@@ -18,7 +18,7 @@ const StyledPhoneInput = styled.input`
   line-height: 24px; /* 150% */
   background: transparent;
   border-radius: 12px;
-  color: #252627;
+  color: ${(props) => props.theme.textBase};
   z-index: 10;
   width: 100%;
   text-indent: 12px;
@@ -26,7 +26,7 @@ const StyledPhoneInput = styled.input`
 
 const Wrapper = styled.div`
   position: relative;
-  background: #ebeef2;
+  background: ${(props) => props.theme.auxiliaryElements};
   margin-top: 32px;
   border-radius: 12px;
   width: 100%;
