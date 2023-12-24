@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { SuspendedPage } from "./pages/SuspendedPage";
+
 import { lazy } from "react";
 
 const PhoneFormPage = lazy(() => import("./pages/PhoneFormPage"));
@@ -19,29 +19,17 @@ export const router = createBrowserRouter([
           {
             index: true,
             path: "phone",
-            element: (
-              <SuspendedPage>
-                <PhoneFormPage />
-              </SuspendedPage>
-            ),
+            element: <PhoneFormPage />,
           },
           {
             path: "code",
-            element: (
-              <SuspendedPage>
-                <CodeFormPage />
-              </SuspendedPage>
-            ),
+            element: <CodeFormPage />,
           },
         ],
       },
       {
         path: "/app",
-        element: (
-          <SuspendedPage>
-            <ProtectedPage />
-          </SuspendedPage>
-        ),
+        element: <ProtectedPage />,
       },
     ],
   },
