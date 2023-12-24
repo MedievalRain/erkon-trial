@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledLogo = styled.h1`
   text-transform: uppercase;
   color: ${(props) => props.theme.textBase};
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 26px;
   font-weight: 500;
   line-height: 16px;
